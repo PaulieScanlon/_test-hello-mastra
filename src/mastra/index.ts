@@ -23,18 +23,18 @@ export const mastra = new Mastra({
     name: "Mastra",
     level: "info"
   }),
-  mcpServers: { weatherMcpServer },
-  telemetry: {
-    serviceName: "hello-mastra",
-    enabled: true,
-    sampling: {
-      type: "always_on"
-    },
-    export: {
-      type: "otlp",
-      endpoint: "http://localhost:4318"
-    }
-  }
+  mcpServers: { weatherMcpServer }
+  // telemetry: {
+  //   serviceName: "hello-mastra",
+  //   enabled: true,
+  //   sampling: {
+  //     type: "always_on"
+  //   },
+  //   export: {
+  //     type: "otlp",
+  //     endpoint: "http://localhost:4318"
+  //   }
+  // }
   // server: {
   //   build: {
   //     openAPIDocs: true
